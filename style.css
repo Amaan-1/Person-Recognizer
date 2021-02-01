@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+button {
+    outline: none;
+    font-family: "Langer", cursive;
+    margin-top: 15px;
+    border-top: 4px;
+    margin-left: 37.5;
+    outline: none;
+    float: none;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    background-color: linear-gradient(90deg, #105e4b, #0f475c, #043a4e, #55152d, #4d0d0d, #4b2419);
+    transition: 0.25s linear;
+    border-radius: 10px;
+    width: 25%;
+    align-self: center;
+    animation: moving_animation 15s ease infinite;
+}
+
+button {
+    background: linear-gradient(90deg, #f72d2d, #ee7752, #e73c7e, #076486, #23a6d5, #23d5ab);
+    border: 2px solid linear-gradient(90deg, #105e4b, #0f475c, #043a4e, #55152d, #4d0d0d, #4b2419);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% 500%;
+    animation: moving_gradient 15s ease infinite;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(112, 255, 176);
+    transform: scale(0.9);
+    border: 2px solid rgb(112, 255, 176);
+}
+
+body {
+    background: linear-gradient(90deg, #f72d2d, #ee7752, #e73c7e, #076486, #23a6d5, #23d5ab);
+    background-size: 500% 500%;
+    animation: moving_gradient 15s ease infinite;
+}
+
+h3,
+p,
+label,
+b,
+span {
+    background: linear-gradient(90deg, #105e4b, #0f475c, #043a4e, #55152d, #4d0d0d, #4b2419);
+    background-size: 500% 500%;
+    animation: moving_gradient 15s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes moving_gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-color: 0% 50%;
+    }
+}
